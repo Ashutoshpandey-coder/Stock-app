@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_type_stock_in_self">Select type</string>
+    <string name="toolbar_stock_in_self">Stock In</string>
+    <string name="customer">Customer</string>
+    <string name="self">Self</string>
+    <string name="select_store">Select store</string>
+    <string name="add_store_name">Add store name</string>
+    <string name="enter_quantity_to_add">Enter quantity to add</string>
+    <string name="select_customer">Select Customer</string>
+    <string name="enter_customer_name_here">Enter customer name here</string>
+    <string name="total_amount">Total amount</string>
+    <string name="toolbar_stock_out">toolbar_stock_out</string>
+    <string name="stock_out">Stock Out</string>
+    <string name="sale_price">Sale price</string>
+    <string name="welcome">Welcome!</string>
+    <string name="you_will_receive_an_otp_on_this_number">You will receive an OTP on this number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="please_enter_your_valid_mobile_number_to_create_your_bhandar_account">Please enter your valid mobile number to create your Bhandar account</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="code">Code</string>
+    <string name="account_login">Account Login</string>
+    <string name="verify_mobile_number">Verify Mobile Number</string>
+    <string name="please_enter_the_6_digit_otp_you_received">Please enter the 6-digit OTP you received</string>
+    <string name="otp">OTP</string>
+    <string name="enter_otp_here">Enter OTP here</string>
+    <string name="send_new_otp">Send new OTP</string>
+    <string name="verify">Verify</string>
+    <string name="add_stock">Add Stock</string>
+    <string name="reduce_stock">Reduce Stock</string>
+    <string name="message_no_party_added_yet">No Party Added Yet!</string>
+    <string name="save">Save</string>
+    <string name="selectUnit">Select Unit</string>
+    <string name="available_stock">Available Stock</string>
+    <string name="select_unit">Select Unit</string>
+
+</resources>

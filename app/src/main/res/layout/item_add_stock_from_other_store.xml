@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_add_more_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/text_opening_stock"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_opening_stock"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:autofillHints="@string/text_hint_enter_quantity_here"
+                android:background="@drawable/edit_text_border_background"
+                android:hint="@string/text_hint_enter_quantity_here"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:textColorHint="@color/SecondaryTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/text_select_store"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_add_store"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:autofillHints="@string/text_hint_add"
+                android:background="@drawable/edit_text_border_background"
+                android:hint="@string/text_hint_add"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColorHint="@color/SecondaryTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/text_as_of_date"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/dummy_date_text"
+                android:background="@drawable/edit_text_border_background"
+                android:padding="5dp"
+                android:textColorHint="@color/SecondaryTextColor" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>

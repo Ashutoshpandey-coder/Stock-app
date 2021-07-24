@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.items.AddItemsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_add_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_add_item_activity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/text_item_name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_enter_store_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:autofillHints="@string/text_hint_enter_store_name_here"
+                android:background="@drawable/edit_text_border_background"
+                android:hint="@string/text_hint_enter_here"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="@color/SecondaryTextColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar_add_item_activity">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/text_purchase_price"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_enter_purchase_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/black"
+                        android:autofillHints="@string/text_hint_enter_store_name_here"
+                        android:background="@drawable/edit_text_border_background"
+                        android:hint="@string/text_hint_enter_here"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="@color/SecondaryTextColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar_add_item_activity">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/text_mrp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_enter_mrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/black"
+                        android:autofillHints="@string/text_hint_enter_store_name_here"
+                        android:background="@drawable/edit_text_border_background"
+                        android:hint="@string/text_hint_enter_here"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="@color/SecondaryTextColor" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_above"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar_add_item_activity">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/text_selling_price"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_enter_selling_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:autofillHints="@string/text_hint_enter_store_name_here"
+                        android:textColor="@color/black"
+                        android:background="@drawable/edit_text_border_background"
+                        android:hint="@string/text_hint_enter_here"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="@color/SecondaryTextColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar_add_item_activity">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/text_price_unit"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edit_text_border_background"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_select_unit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/text_select_unit"
+                            android:textSize="18sp"
+                            android:textColor="@color/SecondaryTextColor"
+                            android:gravity="center|start"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            tools:ignore="RtlSymmetry" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_drop_down_arrow_24"
+                            android:background="@color/white"
+                            android:layout_marginRight="5dp"
+                            tools:ignore="RtlSymmetry"
+                            android:contentDescription="@string/content_description_image"
+                            android:layout_marginEnd="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_add_stock_from_other_store"
+                android:id="@+id/rv_add_stock_from_other_store_list"
+                />
+
+            <TextView
+                android:id="@+id/tv_add_stock_from_another_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/add_stock_from_another_store"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginBottom="15dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:text="@string/btn_text_save"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="70dp"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:layout_marginStart="15dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

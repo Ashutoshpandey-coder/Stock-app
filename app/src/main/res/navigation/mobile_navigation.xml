@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_party">
+
+    <fragment
+        android:id="@+id/navigation_party"
+        android:name="stock.register.godown.stock.management.shop.stock.ledger.ui.party.PartyFragment"
+        android:label="@string/title_party"
+        tools:layout="@layout/fragment_party" />
+
+    <fragment
+        android:id="@+id/navigation_stock"
+        android:name="stock.register.godown.stock.management.shop.stock.ledger.ui.stock.StockFragment"
+        android:label="@string/title_stock"
+        tools:layout="@layout/fragment_stock">
+        <action
+            android:id="@+id/fragment_stock_to_fragment_stock_in"
+            app:destination="@id/navigation_stock_in" />
+        <action
+            android:id="@+id/fragment_stock_to_fragment_stock_out"
+            app:destination="@id/navigation_stock_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_stock_in"
+        android:name="bhandar.stock.ledger.stock.management.ui.stock.StockInFragment"
+        tools:layout="@layout/fragment_stock_in"
+        android:label="Stock In">
+        <action
+            android:id="@+id/fragment_stock_in_to_fragment_stock"
+            app:destination="@id/navigation_stock" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_stock_out"
+        android:name="bhandar.stock.ledger.stock.management.ui.stock.StockOutFragment"
+        tools:layout="@layout/fragment_stock_out"
+        android:label="Stock Out">
+        <action
+            android:id="@+id/fragment_stock_out_to_fragment_stock"
+            app:destination="@id/navigation_stock" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_items"
+        android:name="stock.register.godown.stock.management.shop.stock.ledger.ui.items.ItemsFragment"
+        android:label="@string/title_items"
+        tools:layout="@layout/fragment_items">
+        <action
+            android:id="@+id/fragment_items_to_fragment_add_items"
+            app:destination="@+id/navigation_add_items" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_items"
+        android:name="stock.register.godown.stock.management.shop.stock.ledger.ui.items.AddItemsFragment"
+        android:label="Add Items"
+        tools:layout="@layout/fragment_add_items">
+        <action
+            android:id="@+id/fragment_add_items_to_fragment_items"
+            app:destination="@+id/navigation_items" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="stock.register.godown.stock.management.shop.stock.ledger.ui.setting.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

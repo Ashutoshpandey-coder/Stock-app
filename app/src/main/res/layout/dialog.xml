@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:background="@drawable/borderless_ripple"
+                android:id="@+id/Cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_baseline_close_24"
+                tools:ignore="InvalidId" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button1"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Piece"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button2"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="KG"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button3"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Gram"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button4"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="ML"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button5"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Liter"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button6"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="MM"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/button7"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Inch"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button8"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Feet"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button9"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Meter"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button10"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Sq. Ft."
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button11"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Sq. Meter"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button12"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="KM"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button13"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="CM"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button14"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Sq. Inch"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button15"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Minute"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button16"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Hour"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button17"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Day"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button18"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Month"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button19"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Year"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button20"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Set"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button21"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Service"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button22"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Work"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button23"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Packet"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button24"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Box"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button25"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Pound"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button26"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Dozen"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button27"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Pair"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button28"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Quintal"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button29"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Ton"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button30"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Plate"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button31"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Bundle"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button32"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Person"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button33"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Bora"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/button34"
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ripple_with_black_border"
+                    android:gravity="center"
+                    android:text="Peti"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/clear_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Clear unit"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#715AFF"
+                    android:background="@drawable/border_btn_layout" />
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
